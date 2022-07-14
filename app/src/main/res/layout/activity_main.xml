@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/choiceBreadSelection4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choiceBread4"
+        app:layout_constraintEnd_toEndOf="@+id/choiceBreadSelection3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/choiceBreadSelection3"
+        app:layout_constraintTop_toBottomOf="@+id/choiceBreadSelection3"
+        app:layout_constraintVertical_bias="1.0"
+        android:src="@drawable/unselectedicon" />
+
+    <ImageView
+        android:id="@+id/choiceBreadSelection3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choiceBread3"
+        app:layout_constraintEnd_toEndOf="@+id/choiceBreadSelection2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/choiceBreadSelection2"
+        app:layout_constraintTop_toBottomOf="@+id/choiceBreadSelection2"
+        app:layout_constraintVertical_bias="1.0"
+        android:src="@drawable/unselectedicon" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Select 1 out of four options )"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Choice of Bread"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/size"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:elevation="20dp"
+        android:id="@+id/foodImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fimage" />
+
+    <ImageView
+        android:id="@+id/veg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:src="@drawable/vegicon"
+
+        app:layout_constraintStart_toStartOf="@+id/foodImage"
+        app:layout_constraintTop_toBottomOf="@+id/foodImage"
+        />
+
+    <TextView
+        android:id="@+id/foodNme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foodName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/foodImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/veg"
+        app:layout_constraintTop_toBottomOf="@+id/veg" />
+
+    <TextView
+        android:id="@+id/foodDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/foodDesc"
+        app:layout_constraintEnd_toEndOf="@+id/foodImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodImage"
+        app:layout_constraintTop_toBottomOf="@+id/foodNme" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/foodDesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodDesc"
+        app:layout_constraintTop_toBottomOf="@+id/foodDesc" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        android:text="Size"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodImage"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:text="(Select 1 out of two options )"
+        app:layout_constraintBottom_toBottomOf="@+id/size"
+        app:layout_constraintEnd_toEndOf="@+id/foodImage"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toEndOf="@+id/size"
+        app:layout_constraintTop_toTopOf="@+id/size"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/size1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="15 cm(6 inch)"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/foodImage"
+        app:layout_constraintTop_toBottomOf="@+id/size" />
+
+    <TextView
+        android:id="@+id/size2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="30 cm (12 inch)"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/sizeSelection2"
+        app:layout_constraintStart_toStartOf="@+id/size1"
+        app:layout_constraintTop_toBottomOf="@+id/size1"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/size1Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="239"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/size1"
+        app:layout_constraintEnd_toStartOf="@+id/sizeSelection1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/size2Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="409"
+
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/size2"
+        app:layout_constraintStart_toStartOf="@+id/size1Price"
+        app:layout_constraintTop_toTopOf="@+id/sizeSelection2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/sizeSelection1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/selectedicon"
+        app:layout_constraintBottom_toBottomOf="@+id/size1Price"
+        app:layout_constraintEnd_toEndOf="@+id/foodImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+    <ImageView
+        android:id="@+id/sizeSelection2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/sizeSelection1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sizeSelection1"
+        app:layout_constraintTop_toBottomOf="@+id/sizeSelection1"
+        android:src="@drawable/unselectedicon" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/foodImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodImage"
+        app:layout_constraintTop_toBottomOf="@+id/sizeSelection2" />
+
+    <TextView
+        android:id="@+id/choiceBread1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Multigrain"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/choiceBread2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="Multigrain Honey Oats Bread"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/choiceBread1"
+        app:layout_constraintTop_toBottomOf="@+id/choiceBread1" />
+
+    <TextView
+        android:id="@+id/choiceBread3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="White Italian Bread"
+
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/choiceBread2"
+        app:layout_constraintTop_toBottomOf="@+id/choiceBread2" />
+
+    <TextView
+        android:id="@+id/choiceBread4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Roasted Garlic "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/choiceBread3"
+        app:layout_constraintTop_toBottomOf="@+id/choiceBread3" />
+
+    <ImageView
+        android:id="@+id/choiceBreadSelection1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/selectedicon"
+        app:layout_constraintBottom_toBottomOf="@+id/choiceBread1"
+        app:layout_constraintEnd_toEndOf="@+id/sizeSelection2"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/choiceBreadSelection2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choiceBread2"
+        app:layout_constraintEnd_toEndOf="@+id/choiceBreadSelection1"
+        app:layout_constraintStart_toStartOf="@+id/choiceBreadSelection1"
+        app:layout_constraintTop_toBottomOf="@+id/choiceBreadSelection1"
+        app:layout_constraintVertical_bias="1.0"
+        android:src="@drawable/unselectedicon" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/orange"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/choiceBread4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/unit"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:backgroundTint="@color/orange"
+android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/minus"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        app:layout_constraintTop_toTopOf="@+id/minus" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:backgroundTint="@color/orange"
+
+        app:layout_constraintBottom_toBottomOf="@+id/unit"
+        app:layout_constraintStart_toEndOf="@+id/unit"
+        app:layout_constraintTop_toTopOf="@+id/unit" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="Add "
+        app:layout_constraintBottom_toBottomOf="@+id/plus"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toTopOf="@+id/minus"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

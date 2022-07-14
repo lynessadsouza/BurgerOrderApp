@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BurgerOrderApp</string>
+    <string name="foodName">Chatpatta Chana Signature Wrap</string>
+    <string name="bread1">Multigrain</string>
+    <string name="bread2">Multigrain Honey Oats Bread</string>
+    <string name="bread3">White Italian Bread</string>
+     <string name="bread4">Roasted Garlic</string>
+    <string name="foodDesc"><![CDATA[Signature wraps packed with double protein & loaded flavours.]]></string>
+
+</resources>
